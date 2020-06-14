@@ -1,0 +1,41 @@
+example-container {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+}
+
+button {
+    color: white;
+    font-family: Baloo Bhai;
+    background-color: #F89657;
+    ;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.snimka {
+    align-content: center;
+}
+
+.snimka img {
+    width: 200px;
+    height: auto;
+}
+
+.details {
+    width: 500px;
+    margin-left: 20px;
+    align-self: right;
+}
+
+p {
+    font-size: 15pt;
+}
+
+mat-form-field {
+    width: 100%;
+}

@@ -1,0 +1,21 @@
+.bg {
+    display: flex;
+    width: 100%;
+    background-color: #00A985;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 700px;
+    padding-left: 20px;
+}
+
+.map {
+    padding-left: 20px;
+    background-color: white;
+    width: 40%;
+    flex-direction: column;
+    display: flex;
+}
+
+.map h1 {
+    margin-left: 20px;
+}

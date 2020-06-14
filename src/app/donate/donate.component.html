@@ -1,0 +1,133 @@
+<div class="snimka">
+    <div class="tekst">
+        <h1>Thank you for chosing to support Paws Dog Shelter with a donation</h1>
+        <p>Your kind gift will mean more unwanted and poorly pets live happy healthy lives!</p>
+
+    </div>
+
+</div>
+
+
+<div class="money">
+    <div class="helps">
+        <h1>$100</h1>
+        <p>Could pay for <br>emergency veterinary care<br> for a sick or injured pet</p>
+
+    </div>
+    <div class="helps">
+        <h1>$40</h1>
+        <p>Could vaccinate a <br>litter of 5 puppies again<br> life threatening diseases</p>
+
+    </div>
+    <div class="helps">
+        <h1>$15</h1>
+        <p>Could pay for a<br> health check for an <br>unwanted pet</p>
+
+    </div>
+</div>
+
+<div class="bg">
+
+    <div class="donate">
+        <div class="donateF" [formGroup]="donateForm" (ngSubmit)="onSubmit()">
+            <h1>Donation Form</h1>
+            <table>
+                <tr>
+                    <td>
+                        <mat-form-field [hideRequiredMarker]="false" [floatLabel]="true">
+
+                            <input type="text" formControlName="firstName" matInput placeholder="First Name" required>
+                            <mat-error *ngIf="firstNameCtr.invalid">Enter your name</mat-error>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field [hideRequiredMarker]="false" [floatLabel]="true">
+                            <input type="text" formControlName="lastName" matInput placeholder="Last Name">
+                        </mat-form-field>
+                    </td>
+                    <tr>
+            </table>
+
+
+
+            <mat-form-field [hideRequiredMarker]="false" [floatLabel]="true">
+                <input type="text" formControlName="address" matInput placeholder=" Address" required>
+                <mat-error *ngIf="addressCtr.invalid">Invalid address</mat-error>
+            </mat-form-field>
+
+
+
+            <table>
+                <tr>
+                    <td>
+                        <mat-form-field [hideRequiredMarker]="false" [floatLabel]="true">
+                            <span matPrefix>+359</span>
+                            <input type="tel" formControlName="phone" matInput placeholder="Telephone" required>
+                            <mat-error *ngIf="phoneCtr.invalid">Invalid phone number</mat-error>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field [hideRequiredMarker]="false" [floatLabel]="true">
+                            <input type="text" formControlName="email" matInput placeholder=" E-Mail" required>
+                            <mat-error *ngIf="emailCtr.invalid">Invalid E-Mail address</mat-error>
+                        </mat-form-field>
+                    </td>
+                </tr>
+            </table>
+
+
+
+            <mat-form-field [hideRequiredMarker]="false" [floatLabel]="true">
+                <input type="text" formControlName="note" matInput placeholder=" Other Notes(Optional)">
+
+            </mat-form-field>
+
+        </div>
+        <div class="yourDonation" [formGroup]="yourDonationForm" (ngSubmit)="onSubmit()">
+            <h1>Your Donation</h1>
+
+            <mat-form-field [hideRequiredMarker]="false" [floatLabel]="true">
+                <input type="number" formControlName="donate" matInput placeholder="I would like to donate" required>
+                <span matPrefix>
+                    <mat-icon>attach_money</mat-icon>
+                </span>
+                <mat-error *ngIf="donateCtr.invalid">You must enter a value</mat-error>
+            </mat-form-field>
+
+
+            <mat-form-field [hideRequiredMarker]="false" [floatLabel]="true">
+                <input type="text" maxlength="15" formControlName="card" matInput placeholder="Card Number" required>
+                <mat-error *ngIf="cardCtr.invalid">Invalid card number</mat-error>
+            </mat-form-field>
+
+
+
+            <table>
+                <tr>
+                    <td>
+                        <mat-form-field [hideRequiredMarker]="false" [floatLabel]="true">
+                            <input type="date" formControlName="data" matInput placeholder="Expiration Date" required>
+                            <mat-error *ngIf="dataCtr.invalid">Chose an expiration date</mat-error>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field [hideRequiredMarker]="false" [floatLabel]="true">
+                            <input type="text" maxlength="3" formControlName="cvv" matInput placeholder="CVV code" required>
+                            <mat-error *ngIf="cvvCtr.invalid">Enter the CVV code</mat-error>
+                        </mat-form-field>
+                    </td>
+                </tr>
+            </table>
+
+
+        </div>
+    </div>
+    <div class="dButton" [formGroup]="donateForm" [formGroup]="yourDonationForm">
+        <h1>I am ready to make a donation</h1>
+        <div class="buttonError">
+            <button mat-flat-button type="submit" (click)="onSubmit()" [ngClass]="{'button-enabled' : donateForm.valid && yourDonationForm.valid}" [disabled]="!donateForm.valid || !yourDonationForm.valid">Donate</button>
+            <mat-error *ngIf="donateForm.invalid || yourDonationForm.invalid">You have to fill in the donation form
+            </mat-error>
+        </div>
+    </div>
+</div>

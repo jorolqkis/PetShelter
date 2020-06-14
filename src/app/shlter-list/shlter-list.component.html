@@ -1,0 +1,23 @@
+<div class="wrap">
+    <div class="alert alert-info" role="alert" *ngFor="let shelter of shelters">
+        <div class="d-flex flex-wrap flex-xl-nowrap flex-lg-nowrap flex-md-nowrap ">
+            <div class="p-2">
+                <a href="{{ shelter.fields.shlterUrl }}" target="blank"> <img src="{{ shelter.fields.img.fields.file.url}}" class="rounded" width="196">
+                </a>
+            </div>
+            <div class="p-2">
+                <h5 class="alert-heading">
+                    <a href="{{ shelter.fields.shlterUrl }}" target="blank">{{ shelter.fields.shelterName }}</a>
+                </h5>
+                <div>{{ shelter.fields.shelterDescription }}</div>
+                <a href="{{ shelter.fields.shlterUrl }}" target="blank" class="btn btn-success">Go To Shelter</a>
+                <button (click)="goToShelterDetils(shelter.sys.id)" class="btn btn-info">Shelter Dertails</button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+<ngx-auth-firebaseui></ngx-auth-firebaseui>

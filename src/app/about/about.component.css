@@ -1,0 +1,98 @@
+h1 {
+    padding: 5px;
+    font-size: 30pt;
+    text-align: center;
+    align-self: center;
+}
+
+h2 {
+    font-size: 20pt;
+    text-align: center;
+    color: black;
+}
+
+.about {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18pt;
+    width: 70%;
+    margin-left: 50px;
+    padding: 20px;
+    align-content: center;
+    background-color: white;
+    height: auto;
+    align-self: center;
+}
+
+.position {
+    background-color: #00A985;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.box {
+    margin-left: 50px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.box1 {
+    width: 45%;
+    align-self: left;
+    text-align: center;
+    align-content: center;
+}
+
+.box2 {
+    margin-left: 20px;
+    width: 45%;
+    align-self: right;
+    text-align: center;
+    align-content: center;
+}
+
+.grid {
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    padding-top: 50px;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    background-color: #00A985;
+}
+
+.grid h1 {
+    position: absolute;
+    top: 0;
+}
+
+.grid p {
+    text-align: center;
+    padding: 10px;
+}
+
+mat-grid-list {
+    width: 80%;
+    padding-bottom: 50px;
+}
+
+mat-grid-tile {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: white;
+}

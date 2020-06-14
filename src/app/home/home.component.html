@@ -1,0 +1,105 @@
+<div class="bg">
+    <div class="snimka">
+        <div class="tekst">
+            <h1>You can't buy love</h1>
+            <p>You can adopt a little friend that u can talk to <br>and play with just by clicking the button bellow</p>
+            <button mat-flat-button routerLink="/adopt">ADOPT A BUDDY</button>
+        </div>
+
+    </div>
+</div>
+<h1 class="gh1">Our friends who are looking for a house</h1>
+<div class="galeriq">
+
+    <div class="snimki" *ngFor="let tile of tile2">
+        <div class="img" [style.background-image]="'url('+tile.imageUrl+')'">
+
+        </div>
+        <div class="footer">
+            <h3>
+                {{tile.text}}
+            </h3>
+            <button mat-flat-button (click)="openDialog(tile)">Learn More</button>
+        </div>
+
+    </div>
+
+</div>
+<div class="more">
+    <button mat-flat-button routerLink="/adopt">There are more!</button>
+</div>
+<h1 class="mh1">Horray, last year we had:</h1>
+<div>
+    <div class="year">
+        <div class="ycontent">
+            <h1>6,000</h1>
+            <p>Pets helped by Veterinary Services <br>at our hospitals and clinics</p>
+        </div>
+        <div class="ycontent">
+            <h1>570</h1>
+            <p>Pets helped by Rehoming Services</p>
+        </div>
+        <div class="ycontent">
+            <h1>3,400</h1>
+            <p>Grieving people helped by <br>Pet Bereavement Support Service</p>
+        </div>
+    </div>
+    <div class="dheader">
+        <h1>You can help our shelter</h1>
+    </div>
+    <div class="donationbg">
+        <div class="donation">
+
+            <div class="icons">
+                <div class="icon">
+                    <img src="https://cdn.freelogovectors.net/wp-content/uploads/2013/02/V-icons-Dog-Food_256x256-32.png">
+                    <p>Food</p>
+                </div>
+
+                <div class="icon">
+                    <img src="https://images.vexels.com/media/users/3/152573/isolated/lists/b930f8320c1554af3fc7d2bb7bab3f17-old-teddy-bear-illustration.png">
+                    <p>Toys</p>
+                </div>
+                <div class="icon">
+                    <img src="http://iconbug.com/data/29/256/2054cb46caec46345c23976492b507a8.png">
+                    <p>Medicine</p>
+                </div>
+                <div class="icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/House_image_icon.png">
+                    <p>Sleeping area</p>
+                </div>
+                <div class="icon">
+                    <img src="https://image.flaticon.com/icons/png/128/1496/1496966.png">
+                    <p>Shampoo</p>
+                </div>
+            </div>
+
+            <div class="dcontent">
+                <h2>For anyone who wishes to send anything <br>that could help our shelter or our dogs,<br> you can do so by pressing the contact button bellow :)
+                </h2>
+                <button mat-flat-button routerLink="/contact">Contact Info</button>
+            </div>
+        </div>
+
+        <h1 class="ghh1">Or maybe you want to donate...</h1>
+        <div class="money">
+            <div class="helps">
+                <button mat-flat-button routerLink="/donate">Make a donation</button>
+            </div>
+            <div class="helps">
+                <h1>$100</h1>
+                <p>Could pay for <br>emergency veterinary care<br> for a sick or injured pet</p>
+
+            </div>
+            <div class="helps">
+                <h1>$40</h1>
+                <p>Could vaccinate a <br>litter of 5 puppies again<br> life threatening diseases</p>
+
+            </div>
+            <div class="helps">
+                <h1>$15</h1>
+                <p>Could pay for a<br> health check for an <br>unwanted pet</p>
+
+            </div>
+        </div>
+    </div>

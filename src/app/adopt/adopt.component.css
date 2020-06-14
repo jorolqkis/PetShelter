@@ -1,0 +1,49 @@
+mat-grid-list {
+    background-color: white;
+}
+
+.galeriq {
+    width: 90%;
+    margin-left: 50px;
+    padding: 50px;
+    align-content: center !important;
+    background-color: #00A985;
+    height: auto;
+    align-self: center !important;
+}
+
+.hh1 {
+    font-size: 30px;
+    text-align: center;
+    align-self: center;
+    color: rgba(58, 57, 57, 0.42);
+}
+
+.gh1 {
+    font-size: 25pt;
+    text-align: center;
+    align-self: center;
+    color: white;
+}
+
+.footer h3 {
+    font-size: 25pt;
+    cursor: pointer;
+    color: #e6e6e6;
+    text-decoration: none;
+}
+
+.footer button {
+    font-family: Baloo Bhai;
+    padding: 3px;
+    color: white;
+    background-color: #F89657;
+    font-size: 15px;
+    margin-left: auto!important;
+}
+
+.imgz img {
+    background-size: cover;
+    width: 370px;
+    height: 370px;
+}

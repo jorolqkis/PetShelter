@@ -1,0 +1,85 @@
+<mat-dialog-content *ngIf="!close">
+
+    <div class="example-container">
+
+        <div class="content">
+
+            <div class="snimka">
+                <img [src]="pet.imageUrl" />
+            </div>
+            <div class="details">
+                <h1> Hi, I'm {{pet.text}}</h1>
+                <h1>Details about {{pet.text}}</h1>
+                <p>Weight: {{pet.weight}}</p>
+                <p>Age: {{pet.age}}</p>
+                <p>Breed: {{pet.breed}}</p>
+                <p>Note: </p>
+            </div>
+        </div>
+
+    </div>
+
+</mat-dialog-content>
+
+<mat-dialog-content *ngIf="close">
+
+    <div class="example-container">
+
+        <div class="content">
+            <div class="snimka">
+                <img [src]="pet.imageUrl" />
+            </div>
+            <div class="details">
+                <h1> Hi, I'm {{pet.text}}</h1>
+                <form [formGroup]="adoptionForm" #adoptForm="ngForm">
+
+                    <h3>Adoption Form</h3>
+
+                    <div class="adoptForm" (ngSubmit)="onSubmit()">
+
+                        <mat-form-field [hideRequiredMarker]="false" [floatLabel]="true">
+                            <input matInput placeholder=" First Name" type="text" formControlName="firstName" required>
+                            <mat-error *ngIf="firstNameCtr.invalid">Invalid Name</mat-error>
+                        </mat-form-field>
+
+
+
+                        <mat-form-field [hideRequiredMarker]="false" [floatLabel]="true">
+                            <input type="text" formControlName="lastName" matInput placeholder=" Last Name">
+                        </mat-form-field>
+
+
+
+                        <mat-form-field [hideRequiredMarker]="false" [floatLabel]="true">
+                            <input type="number" formControlName="age" matInput placeholder=" Age" required>
+                            <mat-error *ngIf="ageCtr.invalid">Invalid input</mat-error>
+                        </mat-form-field>
+
+                        <mat-form-field [hideRequiredMarker]="false" [floatLabel]="true">
+                            <input required id="email" name="email" type="text" formControlName="email" matInput placeholder="E-Mail">
+                            <mat-error *ngIf="emailCtr.invalid">Invalid Email</mat-error>
+                        </mat-form-field>
+
+                        <mat-form-field [hideRequiredMarker]="false" [floatLabel]="true">
+                            <input type="text" formControlName="city" matInput placeholder=" City" required>
+                            <mat-error *ngIf="cityCtr.invalid">Invalid input</mat-error>
+                        </mat-form-field>
+
+                        <mat-form-field [hideRequiredMarker]="false" [floatLabel]="true">
+                            <input type="text" max-lenght="4" min-lenght="4" formControlName="zip" matInput placeholder=" Zip Code" required>
+                            <mat-error *ngIf="zipCtr.invalid">Invalid Zip</mat-error>
+                        </mat-form-field>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button mat-button [mat-dialog-close] cdkFocusInitial>No Thanks</button>
+    <button mat-button (click)="close=!close" *ngIf="!close">Adopt</button>
+    <button mat-button type="submit" *ngIf="close" (click)="onSubmit() && alert()" [disabled]="!adoptionForm.valid" [mat-dialog-close]>Submit</button>
+</mat-dialog-actions>
