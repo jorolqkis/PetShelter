@@ -1,10 +1,8 @@
-mat-grid-list {
-    background-color: white;
-}
-
 .galeriq {
+    border: 1px solid black;
+    border-radius: 10px;
     width: 90%;
-    margin-left: 50px;
+    margin-left: 70px;
     padding: 50px;
     align-content: center !important;
     background-color: #00A985;
@@ -16,7 +14,6 @@ mat-grid-list {
     font-size: 30px;
     text-align: center;
     align-self: center;
-    color: rgba(58, 57, 57, 0.42);
 }
 
 .gh1 {
@@ -27,23 +24,28 @@ mat-grid-list {
 }
 
 .footer h3 {
-    font-size: 25pt;
+    font-size: 17pt;
     cursor: pointer;
     color: #e6e6e6;
-    text-decoration: none;
 }
 
 .footer button {
+    width: 100px;
     font-family: Baloo Bhai;
     padding: 3px;
     color: white;
     background-color: #F89657;
-    font-size: 15px;
+    font-size: 11pt;
     margin-left: auto!important;
 }
 
 .imgz img {
     background-size: cover;
-    width: 370px;
-    height: 370px;
+    width: 300px;
+    height: 300px;
+}
+
+.mat-grid-tile-footer {
+    margin-left: 60px;
+    width: 300px;
 }

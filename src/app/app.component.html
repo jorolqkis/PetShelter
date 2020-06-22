@@ -1,8 +1,15 @@
 <div class="nav">
-    <div class="svg" routerLink="/home">
+    <div class="top">
+        <div class="svg" routerLink="/home">
+
+        </div>
+        <div class="logreg">
+            <button class="lgbuttons" mat-raised-button routerLink="/logreg">Login</button>
+            <button class="lgbuttons" mat-raised-button routerLink="/reg">Register</button>
+            <ngx-auth-firebaseui-avatar></ngx-auth-firebaseui-avatar>
+        </div>
 
     </div>
-
 
     <div class="buttons">
         <button class="buttoni" mat-raised-button routerLink="/home">Home</button>

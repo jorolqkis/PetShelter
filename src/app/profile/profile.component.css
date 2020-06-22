@@ -1,0 +1,9 @@
+.profile {
+    justify-content: space-around;
+    display: flex;
+    padding: 40px;
+}
+
+.box {
+    width: 60%;
+}

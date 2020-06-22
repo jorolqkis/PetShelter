@@ -56,6 +56,9 @@ import { SiteMapComponent } from './site-map/site-map.component';
 import { ShlterListComponent } from './shlter-list/shlter-list.component';
 import { ShelterDetailComponent } from './shelter-detail/shelter-detail.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { LoginRegisterComponent } from './login-register/login-register.component';
+import { RegisterComponent } from './register/register.component';
+import { ProfileComponent } from './profile/profile.component';
 const routes: Routes = [
   { path: '', redirectTo: '/shelters', pathMatch: 'full' },
   { path: 'shelters', component: ShlterListComponent },
@@ -72,7 +75,10 @@ const routes: Routes = [
     PetDetailComponent,
     ShelterDetailComponent,
     ShlterListComponent,
-    SiteMapComponent
+    SiteMapComponent,
+    LoginRegisterComponent,
+    RegisterComponent,
+    ProfileComponent
   ],
   imports: [
     FlexLayoutModule,

@@ -1,71 +1,88 @@
-.nav {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-.svg {
-    margin-left: 50px;
-    align-self: flex-start;
-    background-image: url("C:\Users\jorog\angular9-diplomna\img\logo.png");
-    width: 125px;
-    height: 125px;
-    background-repeat: no-repeat;
-}
-
-.buttons {
-    margin-left: 650px;
-    align-items: center;
-    padding: 15px;
-}
-
-.buttoni {
-    font-family: Baloo Bhai;
-    background-color: #00A985;
-    color: white;
-    margin-right: 20px;
-    height: 30px;
-    font-size: 14pt;
-}
-
-.h1f {
-    text-align: center;
-    font-size: 36pt;
-}
-
-.footer {
-    margin-top: 50px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.footer1 {
-    flex-direction: column;
-    width: 50%;
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-}
-
-.footer1 img {
-    width: 25px;
-    height: 25px;
-}
-
-.footer2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-}
-
-.footer3 {
-    padding-bottom: 20px;
-    padding-top: 20px;
-    width: 100%;
-    background-color: #00A985;
-    display: flex;
-    justify-content: space-around;
-}
+            .nav {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-around;
+            }
+            
+            .svg {
+                margin-left: 50px;
+                background-image: url("C:\Users\jorog\angular9-diplomna\img\logo.png");
+                width: 125px;
+                height: 125px;
+                background-repeat: no-repeat;
+            }
+            
+            .buttons {
+                padding: 15px;
+            }
+            
+            .buttoni {
+                font-family: Baloo Bhai;
+                background-color: #00A985;
+                color: white;
+                margin-right: 20px;
+                height: 30px;
+                font-size: 14pt;
+            }
+            
+            .h1f {
+                text-align: center;
+                font-size: 36pt;
+            }
+            
+            .footer {
+                margin-top: 50px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            
+            .footer1 {
+                flex-direction: column;
+                width: 50%;
+                align-items: center;
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            .footer1 img {
+                width: 25px;
+                height: 25px;
+            }
+            
+            .footer2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 50%;
+            }
+            
+            .footer3 {
+                padding-bottom: 20px;
+                padding-top: 20px;
+                width: 100%;
+                background-color: #00A985;
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            .footer3 a {
+                color: white;
+            }
+            
+            .logreg {
+                margin-bottom: 70px;
+                margin-left: 1050px;
+                align-self: flex-end;
+            }
+            
+            .top {
+                display: flex;
+                width: 100%;
+            }
+            
+            .lgbuttons {
+                margin-right: 20px;
+            }

@@ -1,15 +1,16 @@
 <div *ngIf="shelter.fields" class="wrap">
-
-    <h2>
-        {{shelter.fields.shelterName}}<img width="20%" style="margin: 10px" class="float-right rounded" src="{{ shelter.fields.img.fields.file.url}}">
+    <h2 class="title">
+        {{shelter.fields.shelterName}}
     </h2>
-    <br><br>
-    <div>
-        {{shelter.fields.shelterDescription}}
+    <div class="text-box">
+        <img width="20%" style="margin: 10px" class="float-left rounded" src="{{ shelter.fields.img.fields.file.url}}">
+        <br>
+        <div>
+            {{shelter.fields.shelterDescription}}
+        </div>
+        <div>
+            {{shelter.fields.longDescription}}
+        </div>
     </div>
-    <div>
-        {{shelter.fields.longDescription}}
-    </div>
-
     <button (click)="goToList()" class="btn btn-danger">Back To List</button>
 </div>

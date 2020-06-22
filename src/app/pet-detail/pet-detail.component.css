@@ -22,14 +22,14 @@ button {
 }
 
 .snimka img {
-    width: 200px;
-    height: auto;
+    width: 270px;
+    height: 270px;
 }
 
 .details {
     width: 500px;
-    margin-left: 20px;
-    align-self: right;
+    margin-right: 20px;
+    align-self: left;
 }
 
 p {

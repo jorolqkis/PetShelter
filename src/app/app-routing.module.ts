@@ -9,7 +9,9 @@ import { ContactComponent } from './contact/contact.component';
 import { SiteMapComponent } from './site-map/site-map.component';
 import { ShlterListComponent } from './shlter-list/shlter-list.component';
 import { ShelterDetailComponent } from './shelter-detail/shelter-detail.component';
-
+import { LoginRegisterComponent } from './login-register/login-register.component';
+import { RegisterComponent } from './register/register.component';
+import { ProfileComponent } from './profile/profile.component';
 const routes: Routes = [
   { path: '', redirectTo: '', pathMatch: 'full' },
 
@@ -21,7 +23,10 @@ const routes: Routes = [
   { path: 'sitemap', component: SiteMapComponent },
   { path: 'shelters', component: ShlterListComponent },
 
-  { path: 'shelters/:id', component: ShelterDetailComponent }
+  { path: 'shelters/:id', component: ShelterDetailComponent },
+  { path: 'logreg', component: LoginRegisterComponent },
+  { path: 'reg', component: RegisterComponent },
+  { path: 'profile', component: ProfileComponent }
 ];
 
 @NgModule({

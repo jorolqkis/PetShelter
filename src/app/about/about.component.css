@@ -8,14 +8,11 @@ h1 {
 h2 {
     font-size: 20pt;
     text-align: center;
-    color: black;
 }
 
 .about {
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
+    border-bottom-left-radius: -15px;
+    border-bottom-right-radius: -15px;
     display: flex;
     justify-content: space-between;
     font-size: 18pt;
@@ -23,12 +20,48 @@ h2 {
     margin-left: 50px;
     padding: 20px;
     align-content: center;
-    background-color: white;
+    background-color: #00A985;
     height: auto;
     align-self: center;
+    position: relative;
+}
+
+.about p {
+    color: white;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    transform: translate3d(0px, 0px, 1px);
+}
+
+.doga1 {
+    background-image: url("C:\Users\jorog\angular9-diplomna\img\doga2.png");
+    position: absolute;
+    top: 150px;
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: -230px;
+    z-index: 0;
+}
+
+.doga2 {
+    background-image: url("C:\Users\jorog\angular9-diplomna\img\doga1.png");
+    position: absolute;
+    top: 180px;
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: -200px;
 }
 
 .position {
+    border: 1px solid black;
     background-color: #00A985;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
@@ -42,32 +75,57 @@ h2 {
 }
 
 .box {
-    margin-left: 50px;
+    margin-left: 150px;
     width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
 }
 
 .box1 {
+    padding: 20px;
+    align-items: flex-end;
+    flex-direction: column;
+    display: flex;
+    align-content: right;
     width: 45%;
-    align-self: left;
+    height: 350px;
     text-align: center;
-    align-content: center;
+}
+
+.box1p {
+    width: 50%;
+}
+
+.box1 h1 {
+    align-self: flex-end;
+    width: 50%;
 }
 
 .box2 {
-    margin-left: 20px;
+    padding: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+    display: flex;
     width: 45%;
-    align-self: right;
+    height: 350px;
     text-align: center;
-    align-content: center;
+}
+
+.box2p {
+    width: 50%;
+}
+
+.box2 h1 {
+    width: 50%;
+    align-self: flex-start;
 }
 
 .grid {
+    border: 1px solid black;
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
     padding-top: 50px;
+    padding-bottom: 50px;
     width: 100%;
     justify-content: space-around;
     display: flex;
@@ -90,9 +148,12 @@ mat-grid-list {
 }
 
 mat-grid-tile {
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    font-size: 15pt;
+    border: 7px solid white;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    background-color: white;
+    background-color: #00A985;
+    color: white;
 }
