@@ -21,7 +21,7 @@ export interface Tile {
 })
 
 export class AdoptComponent implements OnInit {
-
+  breakpoint: any;
   tiles = Tile;
   constructor(public dialog: MatDialog) { }
   openDialog(jivotno) {
@@ -29,6 +29,8 @@ export class AdoptComponent implements OnInit {
   };
 
   ngOnInit() {
+    this.breakpoint = (window.innerWidth <= 768) ? 2 : 3;
+    window.scrollTo(0, 0);
   };
 }
 

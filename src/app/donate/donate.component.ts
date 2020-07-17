@@ -89,6 +89,7 @@ export class DonateComponent implements OnInit {
 
 
     });
+    window.scrollTo(0, 0);
   }
 
   onSubmit() {
@@ -140,7 +141,11 @@ export class DonateComponent implements OnInit {
     if (this.yourDonationForm.valid) {
       return b;
     }
+    this.yourDonationForm.reset;
 
+  }
+  alert() {
+    alert("Our shelter and all the dogs thank you for the donation!");
   }
 
 }

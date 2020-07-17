@@ -125,7 +125,7 @@
     <div class="dButton" [formGroup]="donateForm" [formGroup]="yourDonationForm">
         <h1>I am ready to make a donation</h1>
         <div class="buttonError">
-            <button mat-flat-button type="submit" (click)="onSubmit()" [ngClass]="{'button-enabled' : donateForm.valid && yourDonationForm.valid}" [disabled]="!donateForm.valid || !yourDonationForm.valid">Donate</button>
+            <button mat-flat-button type="submit" (click)="onSubmit() && alert()" [ngClass]="{'button-enabled' : donateForm.valid && yourDonationForm.valid}" [disabled]="!donateForm.valid || !yourDonationForm.valid">Donate</button>
             <mat-error *ngIf="donateForm.invalid || yourDonationForm.invalid">You have to fill in the donation form
             </mat-error>
         </div>

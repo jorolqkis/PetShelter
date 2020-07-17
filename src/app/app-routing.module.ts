@@ -12,6 +12,7 @@ import { ShelterDetailComponent } from './shelter-detail/shelter-detail.componen
 import { LoginRegisterComponent } from './login-register/login-register.component';
 import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
+import { CommentComponent } from './comment/comment.component';
 const routes: Routes = [
   { path: '', redirectTo: '', pathMatch: 'full' },
 
@@ -26,7 +27,8 @@ const routes: Routes = [
   { path: 'shelters/:id', component: ShelterDetailComponent },
   { path: 'logreg', component: LoginRegisterComponent },
   { path: 'reg', component: RegisterComponent },
-  { path: 'profile', component: ProfileComponent }
+  { path: 'profile', component: ProfileComponent },
+  { path: 'comment', component: CommentComponent }
 ];
 
 @NgModule({
@@ -34,3 +36,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+

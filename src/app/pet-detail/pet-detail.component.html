@@ -4,7 +4,9 @@
 
         <div class="content">
 
-
+            <div class="snimka">
+                <img [src]="pet.imageUrl" />
+            </div>
             <div class="details">
                 <h1> Hi, I'm {{pet.text}}</h1>
                 <h1>Details about {{pet.text}}</h1>
@@ -13,9 +15,7 @@
                 <p>Breed: {{pet.breed}}</p>
                 <p>Note: </p>
             </div>
-            <div class="snimka">
-                <img [src]="pet.imageUrl" />
-            </div>
+
         </div>
 
     </div>
@@ -27,7 +27,9 @@
     <div class="example-container">
 
         <div class="content">
-
+            <div class="snimka">
+                <img [src]="pet.imageUrl" />
+            </div>
             <div class="details">
                 <h1> Hi, I'm {{pet.text}}</h1>
                 <form [formGroup]="adoptionForm" #adoptForm="ngForm">
@@ -73,9 +75,7 @@
                 </form>
 
             </div>
-            <div class="snimka">
-                <img [src]="pet.imageUrl" />
-            </div>
+
         </div>
     </div>
 </mat-dialog-content>

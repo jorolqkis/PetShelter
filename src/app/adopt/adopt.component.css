@@ -1,51 +1,109 @@
-.galeriq {
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 90%;
-    margin-left: 70px;
-    padding: 50px;
-    align-content: center !important;
-    background-color: #00A985;
-    height: auto;
-    align-self: center !important;
-}
-
-.hh1 {
-    font-size: 30px;
-    text-align: center;
-    align-self: center;
-}
-
-.gh1 {
-    font-size: 25pt;
-    text-align: center;
-    align-self: center;
-    color: white;
-}
-
-.footer h3 {
-    font-size: 17pt;
-    cursor: pointer;
-    color: #e6e6e6;
-}
-
-.footer button {
-    width: 100px;
-    font-family: Baloo Bhai;
-    padding: 3px;
-    color: white;
-    background-color: #F89657;
-    font-size: 11pt;
-    margin-left: auto!important;
-}
-
-.imgz img {
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-}
-
-.mat-grid-tile-footer {
-    margin-left: 60px;
-    width: 300px;
-}
+    .galeriq {
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 90%;
+        margin-left: 70px;
+        padding: 50px;
+        align-content: center !important;
+        background-color: #00A985;
+        height: auto;
+        align-self: center !important;
+    }
+    
+    .hh1 {
+        font-size: 30px;
+        text-align: center;
+        align-self: center;
+    }
+    
+    .gh1 {
+        font-size: 25pt;
+        text-align: center;
+        align-self: center;
+        color: white;
+    }
+    
+    .footer h3 {
+        font-size: 17pt;
+        cursor: pointer;
+        color: #e6e6e6;
+    }
+    
+    .footer button {
+        width: 100px;
+        font-family: Baloo Bhai;
+        padding: 3px;
+        color: white;
+        background-color: #F89657;
+        font-size: 11pt;
+        margin-left: auto!important;
+    }
+    
+    .imgz img {
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+    }
+    
+    .mat-grid-tile-footer {
+        margin-left: 60px;
+        width: 300px;
+    }
+    
+    @media (max-width: 736px) {
+        .galeriq {
+            border: 1px solid white;
+            border-radius: 10px;
+            width: 100%;
+            margin-left: 0px;
+            padding: 3px;
+            padding-bottom: 17px;
+            align-content: center !important;
+            background-color: white;
+            height: auto;
+            align-self: center !important;
+        }
+        .hh1 {
+            font-size: 13pt;
+            text-align: center;
+            align-self: center;
+        }
+        .gh1 {
+            font-size: 13pt;
+            text-align: center;
+            align-self: center;
+            color: black;
+        }
+        .footer h3 {
+            font-size: 10pt;
+            cursor: pointer;
+            color: #e6e6e6;
+        }
+        .footer {
+            width: 50px;
+        }
+        .footer button {
+            width: 30px;
+            font-family: Baloo Bhai;
+            padding: 3px;
+            color: white;
+            background-color: #F89657;
+            font-size: 8pt;
+            height: 36px;
+            margin-left: 40px;
+        }
+        .imgz img {
+            width: 200px;
+            height: 200px;
+            display: block;
+            object-fit: cover;
+        }
+        .mat-grid-tile-footer {
+            margin-left: 0px;
+            width: 100%;
+        }
+        .mat-grid-tile .mat-grid-tile-header,
+        .mat-grid-tile .mat-grid-tile-footer {
+            height: 28px;
+        }
+    }

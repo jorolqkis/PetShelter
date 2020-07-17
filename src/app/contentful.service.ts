@@ -23,7 +23,10 @@ export class ContentfulService {
     return this.client.getEntries(Object.assign({
       content_type: 'shelters'
     }, { 'sys.id': shelterId }))
-      .then(res => res.items[0]);
+      .then(function (res) {
+        console.log(res.items[0]);
+        return res.items[0];
+      });
 
   }
 

@@ -18,6 +18,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.get3randon();
+    window.scrollTo(0, 0);
 
   }
   get3randon() {

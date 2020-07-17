@@ -59,6 +59,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { LoginRegisterComponent } from './login-register/login-register.component';
 import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
+import { CommentComponent } from './comment/comment.component';
+
 const routes: Routes = [
   { path: '', redirectTo: '/shelters', pathMatch: 'full' },
   { path: 'shelters', component: ShlterListComponent },
@@ -66,6 +68,7 @@ const routes: Routes = [
 ];
 @NgModule({
   declarations: [
+
     AppComponent,
     AboutComponent,
     AdoptComponent,
@@ -78,9 +81,12 @@ const routes: Routes = [
     SiteMapComponent,
     LoginRegisterComponent,
     RegisterComponent,
-    ProfileComponent
+    ProfileComponent,
+    CommentComponent,
+
   ],
   imports: [
+
     FlexLayoutModule,
     MatPasswordStrengthModule.forRoot(),
     RouterModule.forRoot(routes),

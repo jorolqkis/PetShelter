@@ -1,41 +1,85 @@
-example-container {
-    display: flex;
-    flex-direction: column;
-    width: 1000px;
-}
-
-button {
-    color: white;
-    font-family: Baloo Bhai;
-    background-color: #F89657;
-    ;
-}
-
-.content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.snimka {
-    align-content: center;
-}
-
-.snimka img {
-    width: 270px;
-    height: 270px;
-}
-
-.details {
-    width: 500px;
-    margin-right: 20px;
-    align-self: left;
-}
-
-p {
-    font-size: 15pt;
-}
-
-mat-form-field {
-    width: 100%;
-}
+        example-container {
+            display: flex;
+            flex-direction: column;
+            width: 1000px;
+        }
+        
+        button {
+            color: white;
+            font-family: Baloo Bhai;
+            background-color: #F89657;
+            ;
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        
+        .snimka {
+            align-content: center;
+        }
+        
+        .snimka img {
+            width: 270px;
+            height: 270px;
+        }
+        
+        .details {
+            width: 500px;
+            margin-left: 20px;
+            align-self: left;
+        }
+        
+        p {
+            font-size: 15pt;
+        }
+        
+        mat-form-field {
+            width: 100%;
+        }
+        
+        @media (max-width: 736px) {
+            example-container {
+                display: flex;
+                flex-direction: column;
+                width: auto;
+            }
+            button {
+                color: white;
+                font-family: Baloo Bhai;
+                background-color: #F89657;
+                ;
+            }
+            .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            .snimka {
+                padding: 5px;
+                align-content: center;
+            }
+            .snimka img {
+                width: 200px;
+                height: 200px;
+            }
+            .details {
+                width: 500px;
+                margin-left: 5px;
+                align-self: left;
+            }
+            .details h1 {
+                font-size: 13pt;
+            }
+            .details h3 {
+                font-size: 13pt;
+            }
+            p {
+                font-size: 11pt;
+            }
+            mat-form-field {
+                width: 100%;
+            }
+        }

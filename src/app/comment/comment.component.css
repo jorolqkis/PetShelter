@@ -1,0 +1,100 @@
+    .title {
+        margin-left: 150px;
+    }
+    
+    .comment-section {
+        padding-left: 100px;
+        width: 800px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    textarea {
+        height: 150px;
+    }
+    
+    .fbutton {
+        margin-left: 600px;
+    }
+    
+    .dispalyComments {
+        margin-left: 50px;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .commentBox {
+        align-self: flex-start;
+        margin-top: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 50%;
+        height: auto;
+    }
+    
+    .username {
+        margin-bottom: 30px;
+        margin-top: 10px;
+        width: 20%;
+    }
+    
+    .content {
+        padding: 20px;
+    }
+    
+    .Image {
+        border-radius: 10%;
+        width: 150px;
+    }
+    
+    @media (max-width: 736px) {
+        .title {
+            margin-left: 30px;
+        }
+        .comment-section {
+            padding: 0;
+            margin-left: 0px;
+            width: 375px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: center;
+        }
+        textarea {
+            margin-right: 50px;
+            height: 150px;
+            width: 150px;
+        }
+        .fbutton {
+            margin-left: 280px;
+        }
+        .dispalyComments {
+            margin-left: 10px;
+            width: 90%;
+            display: flex;
+            justify-content: space-around;
+        }
+        .commentBox {
+            align-self: flex-start;
+            margin-top: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 50%;
+            height: auto;
+        }
+        .username {
+            margin-bottom: 30px;
+            margin-top: 10px;
+            width: 20%;
+        }
+        .content {
+            padding: 20px;
+        }
+        .Image {
+            border-radius: 10%;
+            width: 75px;
+        }
+    }

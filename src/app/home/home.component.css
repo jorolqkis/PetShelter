@@ -261,3 +261,259 @@
     background-color: #F89657;
     font-size: 15pt;
 }
+
+@media (max-width: 736px) {
+    .bg {
+        width: 100%;
+        height: 550px;
+        background-color: #00A985;
+    }
+    .snimka {
+        background-image: url("C:\Users\jorog\angular9-diplomna\img\dogmobile.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        /* height: 550px; */
+        display: block;
+        content: "";
+        box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.42);
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+    }
+    .tekst {
+        padding-bottom: 100px;
+        margin-left: 100px;
+        width: 200px;
+        display: block;
+    }
+    .tekst h1 {
+        font-size: 10pt;
+        display: inline-block;
+        color: #00A985;
+    }
+    .tekst p {
+        font-size: 8pt;
+        display: inline-block;
+        color: whitesmoke;
+    }
+    .tekst button {
+        font-family: Baloo Bhai;
+        color: white;
+        height: 40px;
+        background: #00A985;
+        font-size: 8pt;
+        margin-top: 0;
+        /* box-shadow: 50px 51px 24px -44px rgba(5, 5, 5, 0.59); */
+    }
+    .galeriq {
+        align-content: center;
+        background-color: #00A985;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .ghh1 {
+        padding-top: 5px;
+        font-size: 10pt;
+        text-align: center;
+        width: 100%;
+        background: #00A985;
+        color: white;
+    }
+    .gh1 {
+        padding-top: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 13pt;
+        text-align: center;
+        align-self: center;
+        color: white;
+        background-color: #00A985;
+    }
+    .img {
+        margin-top: 100px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+    }
+    .footer {
+        background-color: white;
+    }
+    .footer h3 {
+        padding: 3px 0;
+        margin: 0;
+        font-size: 8pt;
+        text-align: center;
+        width: 100%;
+        align-self: center;
+    }
+    .footer button {
+        height: 30px;
+        font-family: Baloo Bhai;
+        color: white;
+        box-shadow: 0px 13px 26px 1px rgba(83, 207, 122, 1);
+        width: 100%;
+        align-self: center;
+        background-color: #F89657;
+        font-size: 8pt;
+    }
+    .more {
+        width: 100%;
+        height: 100px;
+        background-color: #00A985;
+        display: flex;
+        justify-content: center;
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 30%;
+    }
+    .more button {
+        font-family: Baloo Bhai;
+        box-shadow: 0px 13px 26px 1px rgba(83, 207, 122, 1);
+        width: 150px;
+        align-self: center;
+        background-color: #F89657;
+        font-size: 12pt;
+        color: white;
+    }
+    .year {
+        align-content: center;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .mh1 {
+        margin-top: 50px;
+        font-size: 13pt;
+        text-align: center;
+        align-self: center;
+    }
+    .year {
+        width: 100%;
+        height: 100px;
+        border-radius: 5px;
+    }
+    .year h1 {
+        font-weight: 700;
+        text-align: center;
+        font-size: 13pt;
+        color: #00A985;
+    }
+    .year p {
+        text-align: center;
+        font-size: 8pt;
+    }
+    .ycontent {
+        height: auto;
+    }
+    .donationbg {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #00A985;
+    }
+    .donation {
+        justify-content: space-around;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        background-color: white;
+        align-content: center;
+        width: 80%;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+    }
+    .dheader {
+        padding-top: 30px;
+        border-top-left-radius: 30%;
+        border-top-right-radius: 30%;
+        color: white;
+        background-color: #00A985;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        height: 100px;
+    }
+    .dheader h1 {
+        font-size: 13pt;
+    }
+    .icons {
+        margin-top: 40px;
+        display: inline-block;
+        column-count: 3;
+        margin-left: 5px;
+        width: 50%;
+        height: 200px;
+    }
+    .icon {
+        margin-top: 40px;
+        width: 30px;
+        height: 30px;
+    }
+    .icon p {
+        text-align: center;
+        font-size: 7pt;
+    }
+    .icons img {
+        width: 30px;
+        height: 30px;
+    }
+    .dcontent {
+        margin-left: 15px;
+        padding-top: 40px;
+        width: 50%;
+        height: 200px;
+        align-content: space-around;
+    }
+    .dcontent h2 {
+        font-size: 7pt;
+    }
+    .dcontent button {
+        font-family: Baloo Bhai;
+        color: white;
+        width: 80px;
+        height: 30px;
+        background-color: #F89657;
+        font-size: 6pt;
+        text-align: center;
+    }
+    .money {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        background-color: white;
+        margin-bottom: 50px;
+        text-align: center;
+        width: 80%;
+        height: 300px;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .money button {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: Baloo Bhai;
+        color: white;
+        width: 130px;
+        height: 30px;
+        align-self: right;
+        background-color: #F89657;
+        font-size: 10pt;
+    }
+    .money h1 {
+        font-size: 10pt;
+    }
+    .money p {
+        font-size: 8pt;
+    }
+}

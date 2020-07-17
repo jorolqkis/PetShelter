@@ -1,40 +1,74 @@
-.wrap {
-    width: 90%;
-    margin-left: 50px;
-    padding: 50px;
-    align-content: center;
-    align-self: center;
-}
-
-.list-box {
-    border-radius: 15px;
-    font-weight: bold;
-    border: 7px solid white;
-    padding: 5px;
-    color: white;
-    background-color: #00A985;
-}
-
-.p-2 a {
-    color: white;
-    font-weight: bold;
-}
-
-.list-buttons {
-    padding-top: 20px;
-}
-
-.details {
-    margin-left: 5px;
-    font-size: 15px;
-    font-family: Baloo Bhai;
-    color: white;
-    background-color: #F89657;
-}
-
-.btn-success {
-    font-size: 15px;
-    font-family: Baloo Bhai;
-    color: black !important;
-    background-color: white;
-}
+    .wrap {
+        width: 90%;
+        margin-left: 50px;
+        padding: 50px;
+        align-content: center;
+        align-self: center;
+    }
+    
+    .list-box {
+        border-radius: 15px;
+        border: 7px solid white;
+        padding: 5px;
+        color: white;
+        background-color: #00A985;
+    }
+    
+    .p-2 a {
+        color: white;
+    }
+    
+    .list-buttons {
+        padding-top: 20px;
+    }
+    
+    .details {
+        margin-left: 5px;
+        font-size: 15px;
+        font-family: Baloo Bhai;
+        color: white;
+        background-color: #F89657;
+    }
+    
+    .btn-success {
+        font-size: 15px;
+        font-family: Baloo Bhai;
+        color: black !important;
+        background-color: white;
+    }
+    
+    @media (max-width: 736px) {
+        .wrap {
+            margin-left: 0;
+            padding: 0;
+            width: 100%;
+            align-content: center;
+            align-self: center;
+        }
+        .list-box {
+            border-radius: 15px;
+            border: 7px solid white;
+            padding: 5px;
+            color: white;
+            background-color: #00A985;
+        }
+        .p-2 a {
+            color: white;
+        }
+        .list-buttons {
+            padding-top: 20px;
+        }
+        .details {
+            margin-left: 5px;
+            font-size: 15px;
+            font-family: Baloo Bhai;
+            color: white;
+            background-color: #F89657;
+        }
+        .btn-success {
+            font-size: 15px;
+            font-family: Baloo Bhai;
+            color: black !important;
+            background-color: white;
+        }
+    }

@@ -24,7 +24,7 @@ export class ShelterDetailComponent implements OnInit {
       .then((shelter) => {
 
         this.shelter = shelter;
-
+        console.log(this.shelter);
       });
   }
 

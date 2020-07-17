@@ -4,15 +4,18 @@
 
         </div>
         <div class="logreg">
-            <button class="lgbuttons" mat-raised-button routerLink="/logreg">Login</button>
-            <button class="lgbuttons" mat-raised-button routerLink="/reg">Register</button>
-            <ngx-auth-firebaseui-avatar></ngx-auth-firebaseui-avatar>
+
+            <ngx-auth-firebaseui-avatar></ngx-auth-firebaseui-avatar><br>
+            <div class="logrebuttons">
+                <button class="lgbuttons" mat-raised-button routerLink="/logreg" [hidden]="hidden">Login</button>
+                <button class="lgbuttons" mat-raised-button routerLink="/reg" [hidden]="hidden">Register</button>
+            </div>
         </div>
 
     </div>
 
     <div class="buttons">
-        <button class="buttoni" mat-raised-button routerLink="/home">Home</button>
+        <button class="buttoni" mat-raised-button routerLink="/home" autofocus>Home</button>
         <button class="buttoni" mat-raised-button routerLink="/adopt">Our pets</button>
         <button class="buttoni" mat-raised-button routerLink="/donate">Donate</button>
         <button class="buttoni" mat-raised-button routerLink="/about">About</button>
@@ -35,7 +38,7 @@
             </p>
         </div>
         <div>
-            <p>Instagram <img src="https://www.zeusmarketing.ca/wp-content/uploads/2018/12/instagram.png" alt=""></p>
+            <p>Instagram <img src="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Instagram-512.png" alt=""></p>
         </div>
         <div>
             <p>Twitter
@@ -66,7 +69,6 @@
     <a [routerLink]="[ '/contact']">Contact us</a>
 
 
-    <a [routerLink]="[ '/sitemap']">Site Map</a>
     <a [routerLink]="[ '/shelters']">Shelters</a>
 
 </div>

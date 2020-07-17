@@ -1,31 +1,103 @@
-.wrap {
-    border-radius: 5px;
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-    margin-left: 50px;
-    padding: 50px;
-    align-content: center;
-    align-self: center;
-    background-color: white;
-}
-
-.title {
-    font-weight: bold;
-}
-
-.text-box {
-    height: auto;
-    padding-bottom: 100px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: #00A985;
-    color: white;
-}
-
-.btn btn-danger {
-    align-self: center;
-}
+    .wrap {
+        border-radius: 5px;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        margin-left: 50px;
+        padding: 50px;
+        align-content: center;
+        align-self: center;
+        background-color: white;
+    }
+    
+    .title {
+        font-weight: bold;
+    }
+    
+    .text-box {
+        height: auto;
+        margin-bottom: 40px;
+        padding-bottom: 100px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #00A985;
+        color: white;
+    }
+    
+    .btn btn-danger {
+        align-self: center;
+    }
+    
+    .comments h2 {
+        margin-left: 605px;
+    }
+    
+    .buttonn {
+        padding: 0px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding-bottom: 2px;
+        font-family: Baloo Bhai;
+        background-color: #00A985;
+        color: white;
+        margin-right: 2px;
+        font-size: 16pt;
+        width: 150px;
+        height: 50px;
+    }
+    
+    @media (max-width: 736px) {
+        .wrap {
+            border-radius: 5px;
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-left: 0px;
+            padding: 0px;
+            align-content: center;
+            align-self: center;
+            background-color: white;
+        }
+        .title {
+            font-weight: bold;
+        }
+        .text-box {
+            height: auto;
+            padding-bottom: 100px;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: #00A985;
+            color: white;
+        }
+        .text-box img {
+            width: 250px;
+            height: 150px;
+        }
+        .btn btn-danger {
+            align-self: center;
+        }
+        .comments h2 {
+            margin-left: 25px;
+        }
+        .buttonn {
+            padding: 0px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            padding-bottom: 2px;
+            font-family: Baloo Bhai;
+            background-color: #00A985;
+            color: white;
+            margin-right: 2px;
+            font-size: 11pt;
+            width: 100px;
+            height: 40px;
+        }
+    }

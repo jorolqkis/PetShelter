@@ -16,6 +16,7 @@ export class ShlterListComponent implements OnInit {
   ngOnInit() {
     this.contentfulService.getShelters()
       .then(shelters => this.shelters = shelters);
+    window.scrollTo(0, 0);
 
   }
 

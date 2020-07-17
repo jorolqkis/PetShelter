@@ -1,4 +1,4 @@
-<div *ngIf="shelter.fields" class="wrap">
+<div *ngIf="shelter" class="wrap">
     <h2 class="title">
         {{shelter.fields.shelterName}}
     </h2>
@@ -12,5 +12,10 @@
             {{shelter.fields.longDescription}}
         </div>
     </div>
-    <button (click)="goToList()" class="btn btn-danger">Back To List</button>
+    <button mat-button (click)="goToList()" class="buttonn">Back To List</button>
+</div>
+<div class="comments">
+
+    <app-comment></app-comment>
+
 </div>

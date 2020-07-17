@@ -50,6 +50,7 @@ export class ContactComponent implements OnInit {
       message: this.messageCtr,
 
     });
+    window.scrollTo(0, 0);
   }
 
   onSubmit() {
@@ -71,6 +72,11 @@ export class ContactComponent implements OnInit {
 
     if (this.contactForm.valid) {
       return a;
+
     }
+
+  }
+  alert() {
+    alert("Your message was successfully send and  will be reviewed as soon as possible! Expect and answer shorty on your email");
   }
 }

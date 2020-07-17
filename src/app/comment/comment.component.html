@@ -1,0 +1,43 @@
+<div>
+
+
+    <form [formGroup]="commentForm" #commentsForm="ngForm">
+        <div class="comment-section">
+
+            <div class="username">
+
+                <img class="Image" [src]="user?.photoURL">
+                <p> {{user?.displayName}}</p>
+            </div>
+
+            <mat-form-field [style.width.px]=250>
+                <mat-label>Leave a comment</mat-label>
+                <textarea style="width:300px" class="comment" type="text" formControlName="comment" matInput></textarea>
+
+            </mat-form-field>
+            <br>
+
+        </div>
+
+
+    </form>
+
+</div>
+<button class="fbutton" mat-flat-button (click)="postCommentUser()">Comment</button>
+<hr>
+<h2 class="title">Comment section</h2>
+<div class="dispalyComments" *ngFor="let comment of comments">
+    <div class="username">
+        <img class="Image" [src]="comment.photoURL">
+
+        <p>{{comment.displayName}}</p>
+    </div>
+
+    <div class="commentBox">
+        <div class="content">
+            <p>{{comment.comment}}</p>
+        </div>
+
+    </div>
+
+</div>
