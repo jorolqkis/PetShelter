@@ -1,4 +1,10 @@
-# Angular9Diplomna
+# PetShelter
+
+Pet shelter is an application that allows people to fill out forms to adopt homeless dogs, make donations to the shelter, read recent news about events related to the subject and also communicate to other people in the news section by commenting their opinion.
+
+# How the app looks like
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.8.
 
