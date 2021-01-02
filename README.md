@@ -4,6 +4,10 @@ Pet shelter is an application that allows people to fill out forms to adopt home
 
 # How the app looks like
 
+![alt text](screenshots/home.png)
+![alt text](screenshots/adopt.png)
+![alt text](screenshots/dialog2.png)
+![alt text](screenshots/details.png)
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.8.
